@@ -125,9 +125,22 @@ html, body {
     display: flex;
 }
 .order-table__img {
-    display: block;
+    flex-shrink: 0;
+    padding-bottom: 60%;
     width: 100%;
+    position: relative;
     max-width: 207px;
+}
+.order-table__img img {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .order-table__card-text {
     display: flex;
@@ -521,6 +534,42 @@ html, body {
     display: block;
     width: 100%;
     max-width: 21px;
+}
+
+@media (max-width: 1199px) {
+    .order-table__img {
+        max-width: 160px;
+        padding-bottom: 55%;
+    }
+    .order-table__card-text-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 991px) {
+    .order {
+        padding-top: 50px;
+    }
+    .order-table__img {
+        padding-bottom: 49%;
+    }
+    .order-table__item {
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
+    .order-table__card-text-small {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .order-table__img {
+        max-width: 140px;
+    }
+    .order-table__item-icon {
+        right: 10px;
+    }
+
 }
 
 
