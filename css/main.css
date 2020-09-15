@@ -538,11 +538,11 @@ html, body {
 
 @media (max-width: 1199px) {
     .order-table__img {
-        max-width: 160px;
+        max-width: 150px;
         padding-bottom: 55%;
     }
     .order-table__card-text-title {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -551,7 +551,7 @@ html, body {
         padding-top: 50px;
     }
     .order-table__img {
-        padding-bottom: 49%;
+        padding-bottom: 45%;
     }
     .order-table__item {
         padding-top: 25px;
@@ -559,6 +559,18 @@ html, body {
     }
     .order-table__card-text-small {
         padding-bottom: 0;
+    }
+    .date-box {
+        justify-content: flex-start;
+    }
+    .date-box-item {
+        margin-right: 13px;
+    }
+    .dropdown-date {
+        margin-right: 21px;
+    }
+    .dropdown-date:last-of-type {
+        margin-right: 0;
     }
 }
 
@@ -569,7 +581,63 @@ html, body {
     .order-table__item-icon {
         right: 10px;
     }
+}
+@media (max-width: 575px) {
+    .order-form {
+        padding: 25px 15px 35px;
+    }
+    .date-box {
+        justify-content: space-between;
+    }
+    .date-box-item {
+        margin-right: 0;
+        max-width: 100px;
+    }
+    .dropdown-date {
+        margin-right: 0;
+    }
+    .order-form-address {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .order-table__title {
+        font-size: 24px;
+    }
+    .order-table__sub-title {
+        font-size: 16px;
+    }
+    .order-table__card {
+        flex-direction: column;
+    }
+    .order-table__card-text {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .order-table__img {
+        max-width: 250px;
+        margin: 0 auto;
+        padding-bottom: 45%;
+    }
+    .order-table__item-icon {
+        right: 0;
+        top: 15px;
+    }
+    .order-table__card-text-small {
+        padding-top: 10px;
+    }
+    .order-table__price {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .date-box-item__icon {
+        max-width: 18px;
+    }
+}
 
+@media (max-width: 400px) {
+    .order-table__img {
+        padding-bottom: 75%;
+    }
 }
 
 
